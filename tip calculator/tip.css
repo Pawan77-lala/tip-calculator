@@ -1,0 +1,9 @@
+body{background:brown;}
+.container{display:grid;justify-content:center;align-content:center;height:100vh;}
+.tip-caculator{background:#f7f7f7;width:350px;border-radius:25px;overflow:hidden;}
+.tip-caculator h1{background:#1e030c;color:#FFF;margin:0px;text-align:center;font-size:25px;padding:10px 0;}
+label{font-weight:500;margin:15px 0 5px 0;line-height:1.2;}
+input#billamt{width:75%;display:inline-block;}
+input#peopleamt{width:75%;display:inline-block;}
+.display-tip{height:90px;background:#F0F0F0;margin-top:15px;text-align:center;border-radius:25px;padding:10px;}
+.display-tip p{margin-bottom:0px;font-size:20px;font-weight:500;line-height:1.2;}

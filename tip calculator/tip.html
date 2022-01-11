@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+		<title>Tip Calculator</title>
+        <link rel="stylesheet" href="tip.css">
+
+    </head>
+    <script src="tip.js"></script>
+    <body>
+        <div class="container">
+			<div class="tip-caculator">
+				<h1>Tip Calculator</h1>
+				<div style="padding:0 15px 15px 15px;">
+					<label>How much was your bill?</label>
+					<br>
+					$ <input class="form-control" id="billamt">
+					<label>How was your Service</label>
+					<select class="form-control" id="serviceQual">
+						<option value="">-- Select an option --</option>
+						<option value="0.3">30% - Outstanding</option>
+						<option value="0.25">25% - Great</option>
+						<option value="0.2">20% - Good</option>
+						<option value="0.15">15% - It was OK</option>
+						<option value="0.1">10% - Bad</option>
+						<option value="0.05">5% - Terrible</option>
+					</select>
+					<label>How many people are sharing the bill?</label>
+					<input class="form-control" min="1" type="number" id="peopleamt"> People
+					<br><br>
+					<center><button class="btn btn-info" id="calculate" onClick="checkAmount()">Calculate</button></center>
+					<div class="display-tip">
+						<p id="tipAmountText"></p>
+						<p id="tipAmount"></p>
+						<p id="tipAmountEach"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>
